@@ -6,10 +6,10 @@
   <p><strong>Reviews</strong></p>
   <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
-    <li class="list-group-item"><%= review.content %></li>
+    <li class="list-group-item mb-3"><%= review.content %></li>
   <% end %>
 </ul>
-<p><%= link_to "Add a review", new_restaurant_review_path(@restaurant) %></p>
+<p><%= link_to "Add a review", new_restaurant_review_path(@restaurant), :class =>"btn btn-primary text-light" %></p>
 </div>
 
-<p><%= link_to "Go back to all restaurants", restaurants_path %></p>
+<p><%= link_to "Go back to all restaurants", restaurants_path, :class =>"btn btn-primary text-light" %></p>

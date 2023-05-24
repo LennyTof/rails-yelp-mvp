@@ -4,6 +4,6 @@
   <%= r.input :address  %>
   <%= r.input :phone_number %>
   <%= r.input :category %>
-  <%= r.submit %>
+  <%= r.submit "Create Restaurant" , class: "btn btn-primary text-light mb-3" %>
 <% end %>
-<p><%= link_to "Cancel", restaurants_path %></p>
+<p><%= link_to "Cancel", restaurants_path, :class =>"btn btn-danger text-dark" %></p>
